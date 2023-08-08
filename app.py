@@ -7,7 +7,7 @@ CORS(app)
 
 @app.route('/', methods=['GET'])
 def test_front():
-    return '<h1>Python Flask Docker Hello!<h1>'
+    return '<h1>Python Flask Docker Hello! !<h1>'
 
 @app.route('/test', methods=['GET'])
 def test_service():
