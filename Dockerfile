@@ -1,4 +1,4 @@
-#! Version 2
+#! Version 1
 # # syntax=docker/dockerfile:1
 
 # FROM python:3.8-slim-buster
@@ -23,7 +23,7 @@ WORKDIR /
 COPY requirements.txt .
 
 # Install the Python dependencies
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application code into the container
 COPY . .

@@ -22,7 +22,7 @@ def generate_audio():
 
     if text:
         tts = gTTS(text)
-        audio_path = './audio.mp3'  # Update with the desired path and filename
+        audio_path = './audio.mp3'  # Update with the desired path and filenam
         tts.save(audio_path)
         return jsonify({'success': True, 'audio_path': audio_path})
     else:
